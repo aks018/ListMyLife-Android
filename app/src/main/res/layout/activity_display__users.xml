@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:id="@+id/textViewChatName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/com_facebook_tooltip_blue_background"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/buttonAddNewFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@mipmap/ic_person_add_black_24dp"
+        android:onClick="newFriend"
+        android:text="Add New Friend To Chat"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="11dp"
+        android:layout_alignBottom="@+id/textViewChatName"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listViewItems"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewChatName"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+
+</RelativeLayout>

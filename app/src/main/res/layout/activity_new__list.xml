@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/com_facebook_button_login_silver_background_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_above="@+id/relativeLayout2"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/com_facebook_tooltip_black_background"
+                android:text="New List Title"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/mTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textStyle="italic"
+                android:textColor="#000000"
+                android:layout_marginRight="7.5dp"
+                android:layout_marginBottom="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="200dp"
+                android:text="TextView" />
+
+            <EditText
+                android:id="@+id/editTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="3.5dp"
+
+                android:layout_marginRight="3.5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView6"
+                android:background="@drawable/rectangle_box"
+                android:ems="10"
+                android:hint=" New Title"
+                android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/com_facebook_tooltip_black_background"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+
+                android:layout_marginTop="81dp"
+                android:text="List Description"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_marginLeft="3.5dp"
+                android:layout_marginRight="3.5dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="top|left"
+                android:layout_below="@+id/textView10"
+                android:hint="Description of List"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="130dp"
+                android:background="@drawable/rectangle_box"
+                android:ems="10"
+                android:maxLines="3"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/com_facebook_tooltip_black_background"
+                android:text="Set Privacy Settings of List"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/editText5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <CheckBox
+                android:id="@+id/checkBoxPublic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="3.5dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView7"
+                android:onClick="publicOnClick"
+                android:text="Public" />
+
+
+            <CheckBox
+                android:id="@+id/checkBoxPrivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="privateOnClick"
+                android:text="Private"
+                android:layout_below="@+id/textView7"
+                android:layout_centerHorizontal="true" />
+            <ListView
+                android:id="@+id/listView"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginLeft="3.5dp"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:layout_marginRight="3.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView18"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <EditText
+                android:id="@+id/editTextListItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="3.5dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="15dp"
+                android:layout_below="@+id/listView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/rectangle_box"
+                android:ems="10"
+                android:hint="Enter List Item"
+                android:inputType="textPersonName"
+                android:layout_toStartOf="@+id/imageButton"
+                android:layout_toLeftOf="@+id/imageButton" />
+            <ImageView
+                android:id="@+id/buttonSetNotificationTime"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="3.5dp"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_add_alert_black_24dp"
+                android:onClick="addNewDateTime"
+                android:layout_marginTop="9.5dp"
+                android:layout_below="@+id/checkBoxPublic"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/textViewDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.5dp"
+                android:text="No Date Set"
+                android:textColor="#000000"
+                android:layout_below="@+id/buttonSetNotificationTime"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="9.5dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/com_facebook_tooltip_black_background"
+                android:textColor="#FFFFFF"
+                android:text="New List Items"
+                android:layout_below="@+id/buttonSetNotificationTime"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_add_circle_black_36dp"
+                android:layout_below="@+id/listView"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:onClick="newItemAdded"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="15dp"
+                android:id="@+id/imageButton" />
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/relativeLayout2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            app:menu="@menu/bottom_nav_items_list"
+            android:layout_alignParentBottom="true"
+            app:itemIconTint="@drawable/selector_list"
+            app:itemTextColor="@drawable/selector_list"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+
+    <item
+        android:id="@+id/messages"
+        android:icon="@mipmap/ic_person_black_24dp"
+        android:title="Messages"
+        android:actionLayout="@layout/notification_friend"
+        myapp:showAsAction="always" />
+    <item
+        android:id="@+id/new_list"
+        android:title="New List"
+        android:icon="@mipmap/ic_note_add_black_24dp"
+        app:showAsAction="ifRoom"
+        />
+
+
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_settings"
+        android:title="Settings"
+        app:showAsAction="never"/>
+
+
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="never"
+        />
+
+
+
+
+
+
+</menu>

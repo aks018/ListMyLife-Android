@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="Group Lists"
+        android:checkable="true"
+
+        android:icon="@mipmap/ic_home_black_24dp"
+        />
+    <item
+        android:id="@+id/menu_my_lists"
+        android:checkable="true"
+        android:title="My Lists"
+        android:enabled="true"
+
+        android:icon="@mipmap/ic_list_black_24dp"
+        />
+    <item
+        android:id="@+id/menu_my_profile"
+        android:checkable="true"
+        android:title="Friends"
+        android:enabled="true"
+        android:icon="@mipmap/ic_person_black_24dp"
+        />
+
+
+    <item
+        android:id="@+id/menu_messages"
+        android:title="Messages"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@mipmap/ic_chat_black_24dp" />
+
+</menu>

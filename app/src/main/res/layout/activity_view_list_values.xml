@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginRight="3.5dp"
+            android:id="@+id/listViewExpanded"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:layout_marginBottom="8.5dp"
+            android:layout_above="@+id/imageButton"
+            android:layout_alignStart="@+id/imageView5" />
+
+        <ImageButton
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_thumb_up_black_24dp"
+            android:onClick="thumbsUp"
+            android:layout_marginTop="10.5dp"
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginRight="3.5dp"
+            android:layout_above="@+id/textViewLike"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textViewLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginBottom="1.5dp"
+            android:layout_marginRight="3.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/imageView5"
+            android:layout_alignEnd="@+id/imageView5"
+            android:layout_below="@+id/imageView6" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:onClick="thumbsDown"
+            android:background="@drawable/ic_thumb_down_red_24dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_above="@+id/textViewDislike"
+            android:layout_toRightOf="@+id/textViewLike"
+            android:layout_toEndOf="@+id/textViewLike" />
+        <TextView
+            android:id="@+id/textViewDislike"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="1.5dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/imageView6"
+            android:layout_alignStart="@+id/imageView6"
+            android:layout_alignRight="@+id/imageView6"
+            android:layout_alignEnd="@+id/imageView6" />
+        <ImageButton
+            android:id="@+id/buttonGoToChat"
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginRight="3.5dp"
+            android:onClick="goToChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_chat_black_36dp"
+            android:layout_alignTop="@+id/imageView6"
+            android:layout_alignRight="@+id/listViewExpanded"
+            android:layout_alignEnd="@+id/listViewExpanded" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go To Chat"
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginRight="3.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <EditText
+            android:id="@+id/editTextListItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginRight="3.5dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/rectangle_box"
+            android:ems="10"
+            android:hint="Enter List Item"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/imageView5"
+            android:layout_alignStart="@+id/listViewExpanded"
+            android:layout_toStartOf="@+id/imageButton" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_add_circle_black_36dp"
+            android:layout_marginRight="3.5dp"
+            android:onClick="newItemAdded"
+            android:layout_marginLeft="3.5dp"
+            android:paddingBottom="15dp"
+            android:id="@+id/imageButton"
+            android:layout_alignTop="@+id/editTextListItem"
+            android:layout_alignStart="@+id/buttonGoToChat" />
+
+
+</RelativeLayout>

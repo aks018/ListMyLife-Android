@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ListMyLife</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_messages__splash_screen">Messages_SplashScreen</string>
+    <string name="title_activity_my_application">MyApplication</string>
+    <string name="title_activity_profile__page__splash_screen">Profile_Page_SplashScreen</string>
+    <string name="title_activity_find__friends">Find_Friends</string>
+</resources>

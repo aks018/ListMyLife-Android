@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1082359682561",
+    "firebase_url": "https://list-my-life.firebaseio.com",
+    "project_id": "list-my-life",
+    "storage_bucket": "list-my-life.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082359682561:android:84910028fe317069",
+        "android_client_info": {
+          "package_name": "com.listmylife.avita.listmylife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1082359682561-bmskthi901q1v6csf1i3hif73sgf1nrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxIQLZ3lr7I1LCKEHkroZc8V97oGRsWM4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

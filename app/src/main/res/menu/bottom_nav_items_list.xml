@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home"
+        android:icon="@mipmap/ic_home_black_24dp"
+        />
+    <item
+        android:id="@+id/menu_top"
+        android:title="Top of Page"
+        android:icon="@mipmap/ic_restore_page_black_24dp"
+        />
+    <item
+        android:id="@+id/menu_clear"
+        android:title="Clear List"
+        android:enabled="true"
+        android:icon="@mipmap/ic_clear_black_24dp"
+        />
+
+    <item
+        android:id="@+id/menu_submit"
+        android:title="Submit"
+        android:icon="@mipmap/ic_done_black_24dp" />
+
+</menu>

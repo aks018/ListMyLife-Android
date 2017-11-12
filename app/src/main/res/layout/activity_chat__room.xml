@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/com_facebook_button_background_color">
+
+        <TextView
+            android:id="@+id/DisplayUsers"
+            android:layout_width="match_parent"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="TextView"
+            android:textColor="#ffffff"
+            android:layout_marginRight="3.5dp"
+            android:layout_marginLeft="3.5dp"
+            android:textSize="17dp"
+            android:textStyle="italic"
+            android:layout_toLeftOf="@+id/imageButtonGoToList"
+            android:layout_toStartOf="@+id/imageButtonGoToList" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_format_list_bulleted_white_36dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3.5dp"
+            android:layout_marginLeft="3.5dp"
+            android:onClick="goToList"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imageButtonGoToList" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/relativeLayout20"
+                android:layout_marginTop="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+        <ListView
+            android:id="@+id/list_msg"
+            android:divider="@null"
+            android:dividerHeight="9.5dp"
+            android:background="@drawable/com_facebook_button_login_silver_background"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3.5dp"
+            android:layout_marginLeft="3.5dp"
+            android:transcriptMode="alwaysScroll"
+            android:textSize="15dp"
+
+            android:layout_marginBottom="5.5dp"
+            android:layout_above="@+id/editTextSendMessage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <EditText
+            android:id="@+id/editTextSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="3.5dp"
+            android:layout_marginLeft="3.5dp"
+            android:inputType="textPersonName"
+            android:textSize="16dp"
+            android:hint="Input message"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_toStartOf="@+id/buttonSendMessage" />
+
+        <ImageButton
+            android:id="@+id/buttonSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3.5dp"
+            android:layout_marginLeft="3.5dp"
+            android:onClick="sendMessage"
+            android:textColor="@color/background_material_light"
+            android:background="@mipmap/ic_send_black_24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_camera_alt_black_24dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="uploadPicture"
+            android:layout_alignStart="@+id/list_msg"
+            android:id="@+id/imageView2" />
+            </RelativeLayout>
+
+
+
+</LinearLayout>

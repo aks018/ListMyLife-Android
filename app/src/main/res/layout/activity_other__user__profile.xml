@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/emptyprofile50x50"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/ProfileName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:text="TextView"
+        android:layout_below="@+id/imageView9"
+        android:layout_marginTop="3.5dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/addAsFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_person_add_black_36dp"
+        android:onClick="addNewFriend"
+        android:text="Send Friend Request"
+        android:layout_marginLeft="3.5dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/ProfileName2"
+        android:layout_alignParentStart="true" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.5dp"
+        android:onClick="goToMessages"
+        android:background="@mipmap/ic_chat_black_36dp"
+        android:layout_alignTop="@+id/addAsFriend"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageButton3" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/friendsListView"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="3.5dp"
+        android:layout_marginRight="3.5dp"
+        android:layout_height="wrap_content"
+        android:text="Current Friends"
+        android:layout_below="@+id/addAsFriend"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewAddFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.5dp"
+        android:layout_marginRight="3.5dp"
+        android:layout_above="@+id/imageButton3"
+        android:layout_alignStart="@+id/addAsFriend"
+        android:text="Add Friend" />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="3.5dp"
+        android:layout_marginRight="3.5dp"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:layout_above="@+id/imageButton3"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

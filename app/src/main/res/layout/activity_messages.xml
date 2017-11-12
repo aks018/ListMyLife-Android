@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swiperefresh"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_above="@+id/relativeLayout2"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout21"
+        >
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:dividerHeight="1.5dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:id="@+id/textViewVisible"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:text="YOU CURRENTLY HAVE NO MESSAGES. GO AHEAD AND CREATE ONE TO MAKE YOUR LIFE EASIER"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/buttonNewRoom"
+        android:layout_width="wrap_content"
+        app:backgroundTint="#58beed"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_group_add_black_24dp"
+        android:onClick="addingNewRoom"
+        android:text="Add New Room"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3.5dp"
+        android:layout_marginBottom="3.5dp"
+        android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/relativeLayout2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            app:menu="@menu/bottom_nav_items"
+            android:layout_alignParentBottom="true"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
